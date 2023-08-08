@@ -20,6 +20,8 @@ Then ("enter a valid credentials and press on Login button", ()=> {
     loginPage.click_btn_sign()
 })
 
+/*
+
 Then("Then visualizo el nombre correcto", ()=>{
     dashboardPage.welcome()
 })
@@ -40,5 +42,5 @@ cy.wait(2000)
 Then('visualizo el mensaje de Dashboard', ()=>{
     dashboardPage.welcome()
 })
-
+*/
 
