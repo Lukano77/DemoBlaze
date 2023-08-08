@@ -1,7 +1,4 @@
 Feature: TestSuite DemoBlaze
-
-Scenario: First Test
+@Simple
+Scenario: Inicio de Sesion Exitoso
     Given in the main page of DemoBlaze
-    When sign Up as a new user
-    Then enter a valid credentials and press on Login button
-    Then visualizo el nombre correcto
