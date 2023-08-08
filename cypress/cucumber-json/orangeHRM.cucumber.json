@@ -1,0 +1,496 @@
+[
+  {
+    "keyword": "Feature",
+    "name": "TestSuite Orange HRM",
+    "line": 1,
+    "id": "testsuite-orange-hrm",
+    "tags": [],
+    "uri": "orangeHRM.feature",
+    "elements": [
+      {
+        "id": "testsuite-orange-hrm;inicio-de-sesion-exitoso",
+        "keyword": "Scenario",
+        "line": 4,
+        "name": "Inicio de Sesion Exitoso",
+        "tags": [
+          {
+            "name": "@Simple",
+            "line": 3
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 5,
+            "name": "en la pagina principal de Orange HRM",
+            "result": {
+              "status": "undefined",
+              "duration": 115000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 6,
+            "name": "ingreso las credenciales validas y presiono el boton Login",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 7,
+            "name": "visualizo el nombre correcto",
+            "result": {
+              "status": "skipped"
+            }
+          }
+        ]
+      },
+      {
+        "id": "testsuite-orange-hrm;inicio-de-sesion-exitoso-con-parametros",
+        "keyword": "Scenario",
+        "line": 10,
+        "name": "Inicio de Sesion Exitoso con parametros",
+        "tags": [
+          {
+            "name": "@Parametros",
+            "line": 9
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 11,
+            "name": "en la pagina principal de Orange HRM",
+            "result": {
+              "status": "undefined"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 12,
+            "name": "ingreso el nombre de usuario \"Admin\"",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 13,
+            "name": "ingreso el password del usuario \"admin123\"",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 14,
+            "name": "hago click en el boton Login",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 15,
+            "name": "visualizo el mensaje de bienvenida \"Welcome Paul\"",
+            "result": {
+              "status": "skipped"
+            }
+          }
+        ]
+      },
+      {
+        "id": "testsuite-orange-hrm;inicio-de-sesion-exitoso-con-ejemplo",
+        "keyword": "Scenario",
+        "line": 27,
+        "name": "Inicio de Sesion Exitoso con ejemplo",
+        "tags": [
+          {
+            "name": "@Smoke",
+            "line": 17
+          },
+          {
+            "name": "@Parametros",
+            "line": 18
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 20,
+            "name": "en la pagina principal de Orange HRM",
+            "result": {
+              "status": "undefined"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 21,
+            "name": "ingreso el nombre de usuario \"Admin\"",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 22,
+            "name": "ingreso el password del usuario \"admin123\"",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 23,
+            "name": "hago click en el boton Login",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 24,
+            "name": "visualizo el mensaje de bienvenida \"Welcome Paul\"",
+            "result": {
+              "status": "skipped"
+            }
+          }
+        ]
+      },
+      {
+        "id": "testsuite-orange-hrm;inicio-de-sesion-exitoso-con-ejemplo",
+        "keyword": "Scenario",
+        "line": 28,
+        "name": "Inicio de Sesion Exitoso con ejemplo",
+        "tags": [
+          {
+            "name": "@Smoke",
+            "line": 17
+          },
+          {
+            "name": "@Parametros",
+            "line": 18
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 20,
+            "name": "en la pagina principal de Orange HRM",
+            "result": {
+              "status": "undefined",
+              "duration": 1000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 21,
+            "name": "ingreso el nombre de usuario \"Admin\"",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 22,
+            "name": "ingreso el password del usuario \"admin123\"",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 23,
+            "name": "hago click en el boton Login",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 24,
+            "name": "visualizo el mensaje de bienvenida \"Welcome Paul\"",
+            "result": {
+              "status": "skipped"
+            }
+          }
+        ]
+      },
+      {
+        "id": "testsuite-orange-hrm;inicio-de-sesion-exitoso-con-ejemplo",
+        "keyword": "Scenario",
+        "line": 29,
+        "name": "Inicio de Sesion Exitoso con ejemplo",
+        "tags": [
+          {
+            "name": "@Smoke",
+            "line": 17
+          },
+          {
+            "name": "@Parametros",
+            "line": 18
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 20,
+            "name": "en la pagina principal de Orange HRM",
+            "result": {
+              "status": "undefined"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 21,
+            "name": "ingreso el nombre de usuario \"Admin\"",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 22,
+            "name": "ingreso el password del usuario \"admin123\"",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 23,
+            "name": "hago click en el boton Login",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 24,
+            "name": "visualizo el mensaje de bienvenida \"Welcome Paul\"",
+            "result": {
+              "status": "skipped"
+            }
+          }
+        ]
+      },
+      {
+        "id": "testsuite-orange-hrm;inicio-de-sesion-exitoso-con-ejemplo",
+        "keyword": "Scenario",
+        "line": 30,
+        "name": "Inicio de Sesion Exitoso con ejemplo",
+        "tags": [
+          {
+            "name": "@Smoke",
+            "line": 17
+          },
+          {
+            "name": "@Parametros",
+            "line": 18
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 20,
+            "name": "en la pagina principal de Orange HRM",
+            "result": {
+              "status": "undefined"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 21,
+            "name": "ingreso el nombre de usuario \"Admin\"",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 22,
+            "name": "ingreso el password del usuario \"admin123\"",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 23,
+            "name": "hago click en el boton Login",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 24,
+            "name": "visualizo el mensaje de bienvenida \"Welcome Paul\"",
+            "result": {
+              "status": "skipped"
+            }
+          }
+        ]
+      },
+      {
+        "id": "testsuite-orange-hrm;inicio-de-sesion-exitoso-con-ejemplo",
+        "keyword": "Scenario",
+        "line": 31,
+        "name": "Inicio de Sesion Exitoso con ejemplo",
+        "tags": [
+          {
+            "name": "@Smoke",
+            "line": 17
+          },
+          {
+            "name": "@Parametros",
+            "line": 18
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 20,
+            "name": "en la pagina principal de Orange HRM",
+            "result": {
+              "status": "undefined"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 21,
+            "name": "ingreso el nombre de usuario \"Admin\"",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 22,
+            "name": "ingreso el password del usuario \"admin123\"",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 23,
+            "name": "hago click en el boton Login",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 24,
+            "name": "visualizo el mensaje de bienvenida \"Welcome Paul\"",
+            "result": {
+              "status": "skipped"
+            }
+          }
+        ]
+      },
+      {
+        "id": "testsuite-orange-hrm;inicio-de-sesion-exitoso-con-variable-de-entorno",
+        "keyword": "Scenario",
+        "line": 35,
+        "name": "Inicio de Sesion Exitoso con variable de entorno",
+        "tags": [
+          {
+            "name": "@VariableEntorno",
+            "line": 34
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 36,
+            "name": "en la pagina principal de Orange HRM",
+            "result": {
+              "status": "undefined"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 37,
+            "name": "ingreso el nombre de usuario \"Admin\"",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 38,
+            "name": "ingreso el password del usuario desde una variable de entorno",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 39,
+            "name": "hago click en el boton Login",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 40,
+            "name": "visualizo el mensaje de bienvenida \"Welcome Paul\"",
+            "result": {
+              "status": "skipped"
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

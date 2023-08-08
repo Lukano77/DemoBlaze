@@ -1,0 +1,59 @@
+[
+  {
+    "keyword": "Feature",
+    "name": "TestSuite DemoBlaze",
+    "line": 1,
+    "id": "testsuite-demoblaze",
+    "tags": [],
+    "uri": "copyorangeHRM.feature",
+    "elements": [
+      {
+        "id": "testsuite-demoblaze;first-test",
+        "keyword": "Scenario",
+        "line": 3,
+        "name": "First Test",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "in the main page of DemoBlaze",
+            "result": {
+              "status": "undefined",
+              "duration": 134000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 5,
+            "name": "sign Up as a new user",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 6,
+            "name": "enter a valid credentials and press on Login button",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 7,
+            "name": "visualizo el nombre correcto",
+            "result": {
+              "status": "skipped"
+            }
+          }
+        ]
+      }
+    ]
+  }
+]
