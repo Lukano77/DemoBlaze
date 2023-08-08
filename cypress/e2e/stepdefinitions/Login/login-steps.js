@@ -1,6 +1,6 @@
 /// <reference types="cypress" />
 
-import loginPage from "../../../support/pageobject/orangeHRM/loginPage";
+import loginPage from "../../pageobject/Login/loginPage";
 import dashboardPage from "../../../support/pageobject/orangeHRM/dashboardPage";
 
 import { Given, When, Then } from "cypress-cucumber-preprocessor/steps"; 
