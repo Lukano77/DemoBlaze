@@ -8,11 +8,16 @@
     "uri": "Login.feature",
     "elements": [
       {
-        "id": "testsuite-demoblaze;test-1",
+        "id": "testsuite-demoblaze;inicio-de-sesion-exitoso",
         "keyword": "Scenario",
         "line": 3,
-        "name": "Test 1",
-        "tags": [],
+        "name": "Inicio de Sesion Exitoso",
+        "tags": [
+          {
+            "name": "@Simple",
+            "line": 2
+          }
+        ],
         "type": "scenario",
         "steps": [
           {
@@ -22,7 +27,7 @@
             "name": "in the main page of DemoBlaze",
             "result": {
               "status": "undefined",
-              "duration": 98000000
+              "duration": 184000000
             }
           },
           {
@@ -38,7 +43,70 @@
             "arguments": [],
             "keyword": "Then ",
             "line": 6,
+            "name": "enter a valid credentials and press on Sign Up button",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 7,
+            "name": "press on Cancel button",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 8,
+            "name": "press on Log In",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 9,
             "name": "enter a valid credentials and press on Login button",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 10,
+            "name": "welcome user to the page",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 11,
+            "name": "user is log out",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 12,
+            "name": "press on Log In",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 13,
+            "name": "enter an valid credentials and press on Login button",
             "result": {
               "status": "skipped"
             }

@@ -1,45 +1,54 @@
 /// <reference types="cypress" />
 
-import loginPage from "../../pageobject/Login/loginPage"
+import loginPage from "../../../support/pageobject/orangeHRM/loginPage";
+import dashboardPage from "../../../support/pageobject/orangeHRM/dashboardPage";
 
-import { Given, When, Then } from "cypress-cucumber-preprocessor"
+import { Given, When, Then } from "cypress-cucumber-preprocessor/steps"; 
 
 Given("in the main page of DemoBlaze", ()=> {
 loginPage.go()
 })
 
-
 When ("sign Up as a new user", ()=>{
 loginPage.click_sign()
-loginPage.wait(1500)
+cy.wait(3000)
 })
-
-Then ("enter a valid credentials and press on Login button", ()=> {
-    loginPage.type_username("Admin")
-    loginPage.type_password("admin123")
+Then ("enter a valid credentials and press on Sign Up button", ()=> {
+    loginPage.type_username("admin555545..")
+    loginPage.type_password("admin")
     loginPage.click_btn_sign()
 })
 
-/*
-Then("Then visualizo el nombre correcto", ()=>{
-    dashboardPage.welcome()
+And ("press on Cancel button", ()=>{
+    loginPage.click_btn_close()
 })
 
-And ('ingreso el nombre de usuario {string}', (user_name)=>{
-loginPage.type_username(user_name)
+When ("press on Log In", ()=>{
+    loginPage.click_lnk_login()
+    cy.wait(3000)
 })
 
-Then('ingreso el password del usuario {string}', (user_password)=>{
-    loginPage.type_password(user_password)
-})
-    
-When('hago cuando click en el boton Login', ()=>{
-loginPage.click_login()
-cy.wait(2000)
+Then ("enter a valid credentials and press on Login button", ()=> {
+    loginPage.type_username_login("admin555545..")
+    loginPage.type_password_login("admin")
+    loginPage.click_btn_login()
 })
 
-Then('visualizo el mensaje de Dashboard', ()=>{
-    dashboardPage.welcome()
+And ('welcome user to the page', ()=>{
+    loginPage.welcome_user_login()
 })
-*/
 
+And('user is log out', ()=>{
+    loginPage.click_lnk_logout()
+})
+
+When ("press on Log In", ()=>{
+    loginPage.click_lnk_login()
+    cy.wait(3000)
+})
+
+Then ("enter an valid credentials and press on Login button", ()=> {
+    loginPage.type_username_login("")
+    loginPage.type_password_login("")
+    loginPage.click_btn_login()
+})

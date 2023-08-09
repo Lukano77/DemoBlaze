@@ -13,11 +13,9 @@
     "test": "npm run cy:open",
     "report": "node cucumber-html-report.js"
   },
-  
   "keywords": [],
   "author": "Luciano Cuesta",
   "license": "ISC",
- 
   "devDependencies": {
     "cypress": "^9.7.0",
     "cypress-cucumber-attach-screenshots-to-failed-steps": "^1.0.0",
@@ -29,10 +27,11 @@
     "nonGlobalStepDefinitions": true,
     "stepDefinitions": "cypress/integration/features/Login",
     "cucumberJson": {
-      "generate": true,
-      "outputFolder": "cypress/cucumber-json",
-      "filePrefix": "",
-      "fileSuffix": ".cucumber"
+    "generate": true,
+    "outputFolder": "cypress/cucumber-json",
+    "filePrefix": "",
+    "fileSuffix": ".cucumber"
+    }
     }
   }
-}
+
