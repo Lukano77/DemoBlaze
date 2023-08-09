@@ -14,7 +14,10 @@ class LoginPage {
         txt_password_login:()=>cy.get('#loginpassword'),
         btn_login:()=> cy.get('#logInModal > .modal-dialog > .modal-content > .modal-footer > .btn-primary'),
         welcome_user:()=> cy.get('#nameofuser'),
-        lnk_logout:()=>cy.get('#logout2')
+        lnk_logout:()=>cy.get('#logout2'),
+        lnk_phone:()=> cy.xpath('//a[contains(.,"Phones")]').should('be.visible')
+
+    
 
     }
 
@@ -70,10 +73,17 @@ class LoginPage {
     click_lnk_logout(){
         this.elementos.lnk_logout().click()
     }
+
+    click_menu_phones(){
+        this.elementos.lnk_phone().click({force:true})
+        
+    }
+
     go(){
         cy.visit('https://www.demoblaze.com/')
         cy.wait(2500)
     }
-}
+
+    }
 
 module.exports = new LoginPage();

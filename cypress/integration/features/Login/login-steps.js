@@ -1,7 +1,6 @@
 /// <reference types="cypress" />
 
 import loginPage from "../../../support/pageobject/orangeHRM/loginPage";
-import dashboardPage from "../../../support/pageobject/orangeHRM/dashboardPage";
 
 import { Given, When, Then } from "cypress-cucumber-preprocessor/steps"; 
 
@@ -13,7 +12,7 @@ When ("sign Up as a new user", ()=>{
 loginPage.click_sign()
 cy.wait(3000)
 })
-Then ("enter a valid credentials and press on Sign Up button", ()=> {
+When ("enter a valid credentials and press on Sign Up button", ()=> {
     loginPage.type_username("admin555545..")
     loginPage.type_password("admin")
     loginPage.click_btn_sign()
@@ -28,7 +27,7 @@ When ("press on Log In", ()=>{
     cy.wait(3000)
 })
 
-Then ("enter a valid credentials and press on Login button", ()=> {
+When ("enter a valid credentials and press on Login button", ()=> {
     loginPage.type_username_login("admin555545..")
     loginPage.type_password_login("admin")
     loginPage.click_btn_login()
@@ -36,6 +35,7 @@ Then ("enter a valid credentials and press on Login button", ()=> {
 
 And ('welcome user to the page', ()=>{
     loginPage.welcome_user_login()
+    cy.wait(2500)
 })
 
 And('user is log out', ()=>{
@@ -47,8 +47,12 @@ When ("press on Log In", ()=>{
     cy.wait(3000)
 })
 
-Then ("enter an valid credentials and press on Login button", ()=> {
-    loginPage.type_username_login("")
-    loginPage.type_password_login("")
+Then ("enter an invalid credentials and press on Login button", ()=> {
+    loginPage.type_username_login(" ")
+    loginPage.type_password_login(" ")
     loginPage.click_btn_login()
+})
+
+When("press on Phone", ()=> {
+    loginPage.click_menu_phones()
 })
