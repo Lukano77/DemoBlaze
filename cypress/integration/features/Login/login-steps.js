@@ -63,12 +63,33 @@ When("press on Phone", ()=> {
 //Add to card page
 And ("select the first phone on the list", ()=>{
     loginPage.click_first_phones()
+    cy.wait(1500)
 })
 
 When ('press on add to card button', ()=>{
     loginPage.btn_add_to_card()
+    cy.wait(1500)
 })
 
 Then('alert verification', ()=>{
     loginPage.alert_verification()
+})
+
+When ('press on Home button', ()=>{
+    loginPage.btn_home()
+})
+
+And ('select the second phone on the list', ()=>{
+    loginPage.click_second_phones()
+    cy.wait(1500)
+
+})
+
+When ('press on Cart on the menu',()=>{
+    loginPage.btn_menu_add_to_card()
+    cy.wait(2500)
+})
+
+And ('delete the first element from the list',()=>{
+    loginPage.click_delete_first_item()
 })

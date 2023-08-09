@@ -25,7 +25,6 @@
   },
   "cypress-cucumber-preprocessor": {
     "nonGlobalStepDefinitions": true,
-    "stepDefinitions": "cypress/integration/features/Login",
     "cucumberJson": {
     "generate": true,
     "outputFolder": "cypress/cucumber-json",

@@ -21,3 +21,10 @@ Scenario: Test2
     And select the first phone on the list
     When press on add to card button
     Then alert verification
+    When press on Home button
+    And select the second phone on the list
+    When press on add to card button
+    Then alert verification
+    When press on Home button
+    When press on Cart on the menu
+    And delete the first element from the list

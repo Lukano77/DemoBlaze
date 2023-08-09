@@ -8,16 +8,11 @@
     "uri": "Login.feature",
     "elements": [
       {
-        "id": "testsuite-demoblaze;inicio-de-sesion-exitoso",
+        "id": "testsuite-demoblaze;test1",
         "keyword": "Scenario",
         "line": 3,
-        "name": "Inicio de Sesion Exitoso",
-        "tags": [
-          {
-            "name": "@Simple",
-            "line": 2
-          }
-        ],
+        "name": "Test1",
+        "tags": [],
         "type": "scenario",
         "steps": [
           {
@@ -27,7 +22,7 @@
             "name": "in the main page of DemoBlaze",
             "result": {
               "status": "undefined",
-              "duration": 184000000
+              "duration": 119000000
             }
           },
           {
@@ -41,7 +36,7 @@
           },
           {
             "arguments": [],
-            "keyword": "Then ",
+            "keyword": "When ",
             "line": 6,
             "name": "enter a valid credentials and press on Sign Up button",
             "result": {
@@ -68,7 +63,7 @@
           },
           {
             "arguments": [],
-            "keyword": "Then ",
+            "keyword": "When ",
             "line": 9,
             "name": "enter a valid credentials and press on Login button",
             "result": {
@@ -106,7 +101,89 @@
             "arguments": [],
             "keyword": "Then ",
             "line": 13,
-            "name": "enter an valid credentials and press on Login button",
+            "name": "enter an invalid credentials and press on Login button",
+            "result": {
+              "status": "skipped"
+            }
+          }
+        ]
+      },
+      {
+        "id": "testsuite-demoblaze;test2",
+        "keyword": "Scenario",
+        "line": 15,
+        "name": "Test2",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 16,
+            "name": "in the main page of DemoBlaze",
+            "result": {
+              "status": "undefined"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 17,
+            "name": "press on Log In",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 18,
+            "name": "enter a valid credentials and press on Login button",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 19,
+            "name": "welcome user to the page",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 20,
+            "name": "press on Phone",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 21,
+            "name": "select the first phone on the list",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 22,
+            "name": "press on add to card button",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 23,
+            "name": "alert verification",
             "result": {
               "status": "skipped"
             }
