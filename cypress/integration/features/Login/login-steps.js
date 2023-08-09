@@ -8,7 +8,7 @@ Given("in the main page of DemoBlaze", ()=> {
 loginPage.go()
 })
 
-/*
+
 When ("sign Up as a new user", ()=>{
 loginPage.click_sign()
 loginPage.wait(1500)
@@ -20,7 +20,7 @@ Then ("enter a valid credentials and press on Login button", ()=> {
     loginPage.click_btn_sign()
 })
 
-
+/*
 Then("Then visualizo el nombre correcto", ()=>{
     dashboardPage.welcome()
 })
