@@ -15,13 +15,15 @@ class LoginPage {
         btn_login:()=> cy.get('#logInModal > .modal-dialog > .modal-content > .modal-footer > .btn-primary'),
         welcome_user:()=> cy.get('#nameofuser'),
         lnk_logout:()=>cy.get('#logout2'),
-        lnk_phone:()=> cy.xpath('//a[contains(.,"Phones")]').should('be.visible')
+        lnk_phone:()=> cy.xpath('//a[contains(.,"Phones")]').should('be.visible'),
+        lnk_first_phone: ()=>cy.get(':nth-child(1) > .card > .card-block > .card-title > .hrefch'),
+        add_to_card:()=>cy.get('.col-sm-12 > .btn')
 
     
 
     }
 
-    //Action on Main Menu
+    //Action on Main Menu - Login - Logout - SignIn - Sign Out
     click_sign(){
         this.elementos.lnk_sign().click()
     }
@@ -74,9 +76,28 @@ class LoginPage {
         this.elementos.lnk_logout().click()
     }
 
+    //Access to Categories. I could used a different place on Page Object like new folder called "Categories" but I had a problems there on features
+    //So I decied to use the same page to get elements.
+    //Phones - Laptop - Monitors
+
     click_menu_phones(){
         this.elementos.lnk_phone().click({force:true})
-        
+    }
+
+    click_first_phones(){
+        this.elementos.lnk_first_phone().click()
+    }
+
+    //Card Section same to before explaination. To refactor this will be on new class in Page Object and new folder to have better clean code
+    btn_add_to_card(){
+        this.elementos.add_to_card().click()
+    }
+
+   alert_verification(){
+    cy.on('window:alert',(t)=>{
+        //assertions
+        expect(t).to.contains('Product added.');
+     })
     }
 
     go(){

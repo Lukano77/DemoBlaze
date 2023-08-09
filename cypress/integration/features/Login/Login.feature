@@ -18,3 +18,6 @@ Scenario: Test2
     When enter a valid credentials and press on Login button
     Then welcome user to the page
     When press on Phone
+    And select the first phone on the list
+    When press on add to card button
+    Then alert verification

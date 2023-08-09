@@ -53,6 +53,22 @@ Then ("enter an invalid credentials and press on Login button", ()=> {
     loginPage.click_btn_login()
 })
 
+
+//Categories Actions
 When("press on Phone", ()=> {
     loginPage.click_menu_phones()
+})
+
+
+//Add to card page
+And ("select the first phone on the list", ()=>{
+    loginPage.click_first_phones()
+})
+
+When ('press on add to card button', ()=>{
+    loginPage.btn_add_to_card()
+})
+
+Then('alert verification', ()=>{
+    loginPage.alert_verification()
 })
