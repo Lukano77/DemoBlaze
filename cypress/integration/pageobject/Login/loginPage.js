@@ -30,7 +30,7 @@ class LoginPage {
     }
     go(){
         cy.visit('https://www.demoblaze.com/')
-        cy.wait(5000)
+        cy.wait(1500)
     }
 }
 

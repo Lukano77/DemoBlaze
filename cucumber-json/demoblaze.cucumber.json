@@ -1,0 +1,43 @@
+[
+  {
+    "keyword": "Feature",
+    "name": "TestSuite Test1",
+    "line": 1,
+    "id": "testsuite-test1",
+    "tags": [],
+    "uri": "demoBlaze.feature",
+    "elements": [
+      {
+        "id": "testsuite-test1;login-demo-blaze",
+        "keyword": "Scenario",
+        "line": 3,
+        "name": "Login Demo Blaze",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "en la pagina principal de Demo Blaze",
+            "result": {
+              "status": "passed",
+              "duration": 6650000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 5,
+            "name": "enter a correct valid credentials and click on SignUp button on LoginPage",
+            "result": {
+              "status": "failed",
+              "duration": 4048000000,
+              "error_message": "AssertionError: Timed out retrying after 4000ms: Expected to find element: `:nth-child(2) > .oxd-input-group > :nth-child(2) > .oxd-input`, but never found it.\n    at Object.txt_userName (https://www.demoblaze.com/__cypress/tests?p=cypress\\integration\\demoblazeFolder\\demoBlaze.feature:105:19)\n    at LoginPage.type_username (https://www.demoblaze.com/__cypress/tests?p=cypress\\integration\\demoblazeFolder\\demoBlaze.feature:123:22)\n    at Context.eval (https://www.demoblaze.com/__cypress/tests?p=cypress\\integration\\demoblazeFolder\\demoBlaze.feature:50:25)\n    at Context.resolveAndRunStepDefinition (https://www.demoblaze.com/__cypress/tests?p=cypress\\integration\\demoblazeFolder\\demoBlaze.feature:10605:29)\n    at Context.eval (https://www.demoblaze.com/__cypress/tests?p=cypress\\integration\\demoblazeFolder\\demoBlaze.feature:9926:35)"
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

@@ -1,0 +1,66 @@
+[
+  {
+    "keyword": "Feature",
+    "name": "TestSuite DemoBlaze",
+    "line": 1,
+    "id": "testsuite-demoblaze",
+    "tags": [],
+    "uri": "copyorangeHRM.feature",
+    "elements": [
+      {
+        "id": "testsuite-demoblaze;inicio-de-sesion-exitoso",
+        "keyword": "Scenario",
+        "line": 3,
+        "name": "Inicio de Sesion Exitoso",
+        "tags": [
+          {
+            "name": "@Simple",
+            "line": 2
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "in the main page of DemoBlaze",
+            "result": {
+              "status": "passed",
+              "duration": 6216000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 5,
+            "name": "sign Up as a new user",
+            "result": {
+              "status": "failed",
+              "duration": 42000000,
+              "error_message": "TypeError: _loginPage.default.wait is not a function\n    at Context.eval (https://www.demoblaze.com/__cypress/tests?p=cypress\\integration\\clase-4\\copyorangeHRM.feature:52:25)\n    at Context.resolveAndRunStepDefinition (https://www.demoblaze.com/__cypress/tests?p=cypress\\integration\\clase-4\\copyorangeHRM.feature:10635:29)\n    at Context.eval (https://www.demoblaze.com/__cypress/tests?p=cypress\\integration\\clase-4\\copyorangeHRM.feature:9956:35)\nFrom previous event:\n    at Context.thenFn (https://www.demoblaze.com/__cypress/runner/cypress_runner.js:160452:63)\n    at Context.then (https://www.demoblaze.com/__cypress/runner/cypress_runner.js:160904:21)\n    at Context.<anonymous> (https://www.demoblaze.com/__cypress/runner/cypress_runner.js:178437:19)\n    at https://www.demoblaze.com/__cypress/runner/cypress_runner.js:177222:15\nFrom previous event:\n    at CommandQueue.runCommand (https://www.demoblaze.com/__cypress/runner/cypress_runner.js:177201:17)\n    at next (https://www.demoblaze.com/__cypress/runner/cypress_runner.js:177355:19)\n    at https://www.demoblaze.com/__cypress/runner/cypress_runner.js:177384:16\nFrom previous event:\n    at next (https://www.demoblaze.com/__cypress/runner/cypress_runner.js:177355:39)\nFrom previous event:\n    at https://www.demoblaze.com/__cypress/runner/cypress_runner.js:192229:77\nFrom previous event:\n    at CommandQueue.run (https://www.demoblaze.com/__cypress/runner/cypress_runner.js:192224:21)\n    at CommandQueue.run (https://www.demoblaze.com/__cypress/runner/cypress_runner.js:177418:15)\n    at cy.<computed> [as then] (https://www.demoblaze.com/__cypress/runner/cypress_runner.js:178476:18)\n    at runnable.fn (https://www.demoblaze.com/__cypress/runner/cypress_runner.js:178704:19)\n    at callFn (https://www.demoblaze.com/__cypress/runner/cypress_runner.js:129491:21)\n    at ../driver/node_modules/mocha/lib/runnable.js.Runnable.run (https://www.demoblaze.com/__cypress/runner/cypress_runner.js:129478:7)\n    at https://www.demoblaze.com/__cypress/runner/cypress_runner.js:185786:30\nFrom previous event:\n    at Object.onRunnableRun (https://www.demoblaze.com/__cypress/runner/cypress_runner.js:185771:19)\n    at $Cypress.action (https://www.demoblaze.com/__cypress/runner/cypress_runner.js:174866:28)\n    at Runnable.run (https://www.demoblaze.com/__cypress/runner/cypress_runner.js:183435:13)\n    at ../driver/node_modules/mocha/lib/runner.js.Runner.runTest (https://www.demoblaze.com/__cypress/runner/cypress_runner.js:130150:10)\n    at https://www.demoblaze.com/__cypress/runner/cypress_runner.js:130276:12\n    at next (https://www.demoblaze.com/__cypress/runner/cypress_runner.js:130059:14)\n    at https://www.demoblaze.com/__cypress/runner/cypress_runner.js:130069:7\n    at next (https://www.demoblaze.com/__cypress/runner/cypress_runner.js:129971:14)\n    at Hook.<anonymous> (https://www.demoblaze.com/__cypress/runner/cypress_runner.js:130032:7)\n    at next (https://www.demoblaze.com/__cypress/runner/cypress_runner.js:185681:24)\n    at https://www.demoblaze.com/__cypress/runner/cypress_runner.js:185710:13\nFrom previous event:\n    at onNext (https://www.demoblaze.com/__cypress/runner/cypress_runner.js:185707:59)\n    at done (https://www.demoblaze.com/__cypress/runner/cypress_runner.js:129431:5)\n    at callFn (https://www.demoblaze.com/__cypress/runner/cypress_runner.js:129514:7)\n    at ../driver/node_modules/mocha/lib/runnable.js.Runnable.run (https://www.demoblaze.com/__cypress/runner/cypress_runner.js:129478:7)\n    at https://www.demoblaze.com/__cypress/runner/cypress_runner.js:185786:30\nFrom previous event:\n    at Object.onRunnableRun (https://www.demoblaze.com/__cypress/runner/cypress_runner.js:185771:19)\n    at $Cypress.action (https://www.demoblaze.com/__cypress/runner/cypress_runner.js:174866:28)\n    at Runnable.run (https://www.demoblaze.com/__cypress/runner/cypress_runner.js:183435:13)\n    at next (https://www.demoblaze.com/__cypress/runner/cypress_runner.js:129993:10)\n    at https://www.demoblaze.com/__cypress/runner/cypress_runner.js:130037:5\n    at timeslice (https://www.demoblaze.com/__cypress/runner/cypress_runner.js:123963:27)"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 6,
+            "name": "enter a valid credentials and press on Login button",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 7,
+            "name": "visualizo el nombre correcto",
+            "result": {
+              "status": "skipped"
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

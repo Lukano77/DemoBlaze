@@ -13,9 +13,13 @@
   },
 
   "cypress-cucumber-preprocessor": {
-    "nonGlobalStepDefinitions": false,
-    "stepDefinitions": "cypress/e2e/features"
-    
+    "nonGlobalStepDefinitions": true,
+    "cucumberJson": {
+      "generate": true,
+      "outputFolder": "cypress/cucumber-json",
+      "filePrefix": "",
+      "fileSuffix": ".cucumber"
+    }
   },
   "devDependencies": {
     "cypress": "^9.7.0",

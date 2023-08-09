@@ -1,4 +1,4 @@
 Feature: TestSuite DemoBlaze
-@Simple
-Scenario: Inicio de Sesion Exitoso
+
+Scenario: Test 1
     Given in the main page of DemoBlaze
